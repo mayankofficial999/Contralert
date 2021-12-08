@@ -13,5 +13,5 @@ jobs:
       port: 1883
       topic: "feeds/issue"
       message: true
-      username: 'mayankOnAdafruit'
+      username: mayankOnAdafruit
       password: ${{ secrets.MQTT_BROKER_PASSWORD }}
