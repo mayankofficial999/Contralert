@@ -5,13 +5,16 @@ on:
       - "test"
 
 jobs:
-  send-message-to-mqtt:
-    - uses: juhrlass/mqtt-action@master
-      with:
-        protocol: mqtt
-        host: io.adafruit.com
-        port: 1883
-        topic: "/feeds/issue"
-        message: "true"
-        username: "mayankOnAdafruit"
-        password: ${{ secrets.MQTT_BROKER_PASSWORD }}
+  send-message-to-mqtt: 
+    name: Publish Opening of issue to mqtt broker
+    runs-on: ubuntu-latest
+    steps:
+      - uses: juhrlass/mqtt-action@master
+        with:
+          protocol: mqtt
+          host: io.adafruit.com
+          port: 1883
+          topic: "mayankOnAdafruit/feeds/issue"
+          message: "true"
+          username: "mayankOnAdafruit"
+          password: ${{ secrets.MQTT_BROKER_PASSWORD }}
