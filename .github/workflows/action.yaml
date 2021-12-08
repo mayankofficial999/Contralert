@@ -14,7 +14,7 @@ jobs:
           protocol: mqtt
           host: io.adafruit.com
           port: 1883
-          topic: "/feeds/issue"
+          topic: "feeds/issue"
           message: "true"
           username: 'mayankOnAdafruit'
           password: ${{ secrets.MQTT_BROKER_PASSWORD }}
