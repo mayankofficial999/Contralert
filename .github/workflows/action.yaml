@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - "test"
+
+jobs:
+  send-message-to-mqtt: 
+    name: Publish Opening of issue to mqtt broker
+    uses: juhrlass/mqtt-action@master
+    with:
+      protocol: mqtt
+      host: io.adafruit.com
+      port: 1883
+      topic: "feeds/issue"
+      message: true
+      username: 'mayankOnAdafruit'
+      password: ${{ secrets.MQTT_BROKER_PASSWORD }}
