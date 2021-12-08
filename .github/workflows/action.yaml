@@ -9,7 +9,7 @@ jobs:
     name: Publish Opening of issue to mqtt broker
     runs-on: ubuntu-latest
     steps:
-      - uses: juhrlass/mqtt-action@master
+      - uses: stopstopstop/mqtt-action@master
         with:
           protocol: mqtt
           host: io.adafruit.com
