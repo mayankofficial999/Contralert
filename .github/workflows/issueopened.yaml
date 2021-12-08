@@ -1,8 +1,7 @@
 name: Call MQTT for Issue
 on:
-  push:
-    branches:
-      - "test"
+  issues:
+    types: [opened]
 
 jobs:
   send-message-to-mqtt: 
