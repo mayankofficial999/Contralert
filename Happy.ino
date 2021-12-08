@@ -2,13 +2,13 @@
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
 
-#define WLAN_SSID       "Home_Router"
-#define WLAN_PASS       "DkSharma@1294"
+#define WLAN_SSID       "your_ssid"
+#define WLAN_PASS       "your_password"
 
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883
-#define AIO_USERNAME    "mayankOnAdafruit"
-#define AIO_KEY         "aio_VeKp00mS8RJjJvuWzGdJMy08Lqf0"
+#define AIO_USERNAME    "your_username"
+#define AIO_KEY         "your_key"
 
 WiFiClient client;
 Adafruit_MQTT_Client mqtt(&client, AIO_SERVER, AIO_SERVERPORT, AIO_USERNAME, AIO_USERNAME, AIO_KEY);
@@ -54,7 +54,7 @@ void MQTT_connect() {
        Serial.println(mqtt.connectErrorString(ret));
        Serial.println("Retrying MQTT connection in 5 seconds...");
        mqtt.disconnect();
-       delay(5000);  // wait 5 seconds
+       delay(10000);  // wait 5 seconds
        retries--;
        if (retries == 0) {
          // basically die and wait for WDT to reset me
