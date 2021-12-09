@@ -1,7 +1,8 @@
+[Image](https://github.com/mayankofficial999/Contralert/blob/main/Device.jpg)
 # Contralert 
 Contralert is a utility device which produces different sound tones for every issue created, pull request opened, and pull request closed using Github Actions.
 
-## Usage
+## Setup and Installation
 * Go to repo Settings/Secrets and add a new repository secret with name as MTQT_BROKER_PASSWORD and value as key.
 * Now edit the .yaml files in .github/workflows with your details of mqqt broker for each topic i.e Issue Open , Pull Requet Open and Pull Request Closed.
    ```yaml
@@ -16,6 +17,13 @@ Contralert is a utility device which produces different sound tones for every is
 * Now connect a buzzer to NodeMCU gpio pin and enter the mqtt broker details in the .ino file.
 * Upload the code to NodeMCU using Arduino IDE to the board and that's it.
 * The device will connect to the MQTT Server and will generate a tone for respective Github Action.
+
+## Usage
+* Just power up your NodeMCU and connect the buzzer.
+* Now you have your contralert device set up for notifications.
+
+## Demo Video
+[Video](https://github.com/mayankofficial999/Contralert/blob/main/Demo_Video.mp4)
 
 ## Contributions
 
