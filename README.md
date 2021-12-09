@@ -1,4 +1,4 @@
-![Image](https://github.com/mayankofficial999/Contralert/blob/main/Device.jpg)
+<img src="https://github.com/mayankofficial999/Contralert/blob/main/Device.jpg" width="900" height="900" />
 # Contralert 
 Contralert is a utility device which produces different sound tones for every issue created, pull request opened, and pull request closed using Github Actions.
 
@@ -23,7 +23,7 @@ Contralert is a utility device which produces different sound tones for every is
 * Now you have your contralert device set up for notifications.
 
 ## Demo Video
-Link : https://github.com/mayankofficial999/Contralert/blob/main/Demo_Video.mp4
+[<img src="https://github.com/mayankofficial999/Contralert/blob/main/Device.jpg" width="400" height="400" />](https://youtu.be/MR4bHVhEVR0)
 
 ## Contributions
 
