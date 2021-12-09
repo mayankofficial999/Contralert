@@ -23,7 +23,7 @@ Contralert is a utility device which produces different sound tones for every is
 * Now you have your contralert device set up for notifications.
 
 ## Demo Video
-![Video](https://github.com/mayankofficial999/Contralert/blob/main/Demo_Video.mp4)
+Link : https://github.com/mayankofficial999/Contralert/blob/main/Demo_Video.mp4
 
 ## Contributions
 
