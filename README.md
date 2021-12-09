@@ -17,10 +17,6 @@ Contralert is a utility device which produces different sound tones for every is
     password: ${{ secrets.MQTT_BROKER_PASSWORD }}
     ```
 
-<img src=".Device.jpg"/> 
-
-
-
 * Now connect a buzzer to NodeMCU gpio pin and enter the mqtt broker details in the .ino file.
 * Upload the code to NodeMCU using Arduino IDE to the board and that's it.
 * The device will connect to the MQTT Server and will generate a tone for respective Github Action.
